@@ -1,0 +1,463 @@
+*{
+box-sizing: border-box;
+margin: 0px;
+}
+
+body {
+  font-family: Arial;
+  background: #f1f1f1;
+}
+
+/*Encabezado*/
+.cabeza {
+  padding: 30px;
+  text-align: center;
+  background: linear-gradient(180deg,#060d3b 0,#0e1e6d 100%);
+  background-image: url(imgphp/Pattern_header.svg);
+  background-image: url(imgphp/Pattern_header.svg),linear-gradient(180deg,#060d3b 0,#0e1e6d 100%);
+}
+/*Enlace del logo*/
+.enlace {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.enlace1 {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/*Acomodacion del logo*/
+.logo {
+  height: 40px;
+  display: inline-block;
+  vertical-align: top;
+}
+/*Fin del encabezado*/
+
+/*Navegador*/
+.navegador {
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+/*Navegador ~ enlaces*/
+.navegador a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*Ayuda a saber que opcion elijes del navegador*/
+.navegador a:hover {
+  background-color: #2a1d75;
+  color: white;
+}
+/*Fin del navegador*/
+
+/*Boton desplegable*/
+.boton {
+  float: left;
+  overflow: hidden;
+}
+
+.boton .btn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.btn:hover{
+  background-color: #2a1d75;
+  color: white;
+}
+
+.boton-contenido {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 4;
+}
+
+.boton-contenido a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.boton-contenido a:hover {
+  background-color: #E3DAC9;
+  color: black;
+}
+
+.ver {
+  display: block;
+}
+/*Boton desplegable ~ Fin*/
+
+/*Cuerpo*/
+/*Tope*/
+.home{
+    background: url(imgphp/fiestas-semana-santa.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 620px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.naranja {
+    background-color: #ec9130;
+    width: 100%;
+    min-height: 300px;
+    top: 30%;
+    position: absolute;
+    z-index: 2;
+}
+/*Fin del tope de la pgina*/
+
+/*Organizacion*/
+.contenedor {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 500px;
+}
+
+
+/* Organzacion ~ Fin*/
+
+/*Carta*/
+.carta {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 4px;
+    border: 0;
+}
+/*Propiedades de la imagen*/
+.carta-img {
+    max-width: 800px;
+    height: 500px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Imagen dentro de la carta*/
+.carta-chimal {
+  background-image: url(imgphp/chimalli.jpg);
+  border-radius: 10px;
+  border: 0;
+}
+
+.carta-neza {
+  background-image: url(imgphp/estadio1.jpg);
+  border-radius: 10px;
+  border: 0;
+}
+
+.carta-chalco {
+  background-image: url(imgphp/lago1.jpg);
+  border-radius: 10px;
+  border: 0;
+}
+
+/*Texto de la carta*/
+.texto{
+  color: #fff;
+  font-weight: 700;
+  font-size: 23px;
+
+}
+
+/*Coloca el texto al final*/
+.align {
+  padding: 0 5px;
+  display: flex;
+  align-items: flex-end;
+
+/*Coloca el texto al final y el sombreado*/
+}
+.alineacion {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+
+/*Organizacion del cuerpo*/
+.columna {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 4px;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  flex: 0 0 25%;
+  max-width: 20%;
+}
+
+/*Darle sombra al texto*/
+.text {
+    text-shadow: 0 4px 4px #00000080;
+    text-align: right;
+    color: #f8f9fa;
+    margin-bottom: 0;
+    float: inherit;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/*Estilos para imagenes*/
+.img-igle {
+    z-index: 3;
+    top: 5px;
+    bottom: 0;
+    left: -5%;
+    width: 45%;
+    height: 570px;
+    margin: 40px;
+    position: absolute;
+    object-fit: contain;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+/*Fin de los estilos ~ Imagenes*/
+
+/*Intermedio*/
+.intermedio {
+  margin-top: 30px;
+  background-color: #f1f1f1;
+  background-image: url(imgphp/52645901-a-cuadros-a-cuadros-sin-fisuras-patrón-de-fondo-gris.webp);
+  padding-top: 25px;
+  text-align: center;
+  margin-bottom: 30px;;
+  padding-bottom: 20px;
+}
+.col {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    min-width: 0;
+    max-width: 100%;
+    font-weight: 700;
+    font-size: 30px;
+    color: #4d0b0b;
+    margin-right: -15px;
+    margin-left: 630px;
+}
+/*Intermedio ~ Fin*/
+
+/*pie de pagina*/
+.pie {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  background-image: url(imgphp/52645901-a-cuadros-a-cuadros-sin-fisuras-patrón-de-fondo-gris.webp);
+  margin-top: 20px;
+  background-repeat: repeat;
+}
+/*Contenedores*/
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.fila1 {
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+
+.fila2{
+  padding-top: 10px;
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-left: 0;
+}
+
+.fila3{
+  padding-top: 10px;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  text-align: center;
+}
+.col1 {
+  flex: 0 0 100%;
+  max-width: 100%;
+
+}
+
+.col2{
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 24px;
+}
+
+.col3 {
+  padding: 24px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.col4{
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 8px;
+  color: #000;
+  text-align: center;
+}
+/*Contenedores ~ Fin*/
+.fz {
+  font-size:100px;
+  font-family:Austria;
+}
+
+/*Sitio Responsive Telefono ~ Incio*/
+/*Home*/
+@media (max-width:720px) {
+  .home{
+    background: url(imgphp/fiestas-semana-santa.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 620px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (max-width:720px){
+  .naranja{
+    background-color: #ec9130;
+    width: 100%;
+    min-height: 275px;
+    top: 35%;
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+@media (max-width:720px){
+  .fz{
+    font-size: 75px;
+    font-family: Austria;
+  }
+}
+
+@media (max-width:720px){
+  .img-igle{
+    z-index: 3;
+    top: 5%;
+    bottom: 0px;
+    left: -5%;
+    width: 45%;
+    height: 500px;
+    margin: 20px;
+    position: absolute;
+    object-fit: contain;
+  }
+}
+
+/*Home ~ Final*/
+
+/*Intermedio*/
+@media (max-width: 720px){
+  .col {
+    display: none;
+}
+}
+@media (max-width: 720px){
+  .col-lg{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    min-width: 0;
+    max-width: 100%;
+    font-weight: 700;
+    font-size: 15px;
+    color: #4d0b0b;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+
+@media(min-width: 721px){
+  .col-lg{
+    display: none;
+  }
+}
+  /*Intermedio ~ Final*/
+
+  /*Cuerpo ~ Inicio*/
+@media (max-width: 720px){
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -390px;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 720px){
+  .texto{
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+  /*Cuerpo ~ Fin*/
+
+  /*Pie de pagina ~ Inicio*/
+  @media (max-width: 720px){
+    .fila{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -50px;
+    margin-left: -50px;
+    }
+  }
+  /*Pie de pagina ~ Final*/
+
+  /*Sitio Responsive Telefono ~ Final*/
